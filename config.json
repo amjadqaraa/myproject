@@ -1,0 +1,36 @@
+{
+    "analysis": {
+        "max_file_size": 536870912,
+        "timeout": 300,
+        "temp_dir": "/tmp/apk_analysis",
+        "output_formats": ["html", "json"],
+        "enable_detailed_logging": true
+    },
+    "security": {
+        "enable_dynamic_analysis": false,
+        "enable_network_analysis": true,
+        "enable_crypto_analysis": true,
+        "enable_smali_analysis": true,
+        "max_severity_score": 100,
+        "custom_rules_enabled": true
+    },
+    "tools": {
+        "apktool_path": "/usr/local/bin/apktool",
+        "frida_server_path": "./tools/frida-server/frida-server",
+        "java_path": "/usr/bin/java",
+        "python_path": "/usr/bin/python3"
+    },
+    "reporting": {
+        "include_source_code": false,
+        "include_screenshots": false,
+        "language": "ar",
+        "theme": "modern",
+        "export_formats": ["html", "json", "pdf"]
+    },
+    "advanced": {
+        "parallel_processing": true,
+        "cache_results": true,
+        "verbose_output": false,
+        "debug_mode": false
+    }
+}
