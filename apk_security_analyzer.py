@@ -26,13 +26,28 @@ from pathlib import Path
 from datetime import datetime
 import tempfile
 import shutil
-import magic
-import yara
+try:
+    import magic
+except ImportError:
+    magic = None
+
+try:
+    import yara
+except ImportError:
+    yara = None
+
 from typing import Dict, List, Optional, Tuple, Any
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+
+try:
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+except ImportError:
+    pd = None
+    np = None
+    plt = None
+    sns = None
 from rich.console import Console
 from rich.table import Table
 from rich.progress import Progress, SpinnerColumn, TextColumn
@@ -135,7 +150,7 @@ class APKSecurityAnalyzer:
         info = {
             'file_name': self.apk_path.name,
             'file_size': self.apk_path.stat().st_size,
-            'file_type': magic.from_file(str(self.apk_path)),
+            'file_type': magic.from_file(str(self.apk_path)) if magic else 'Unknown',
             'creation_time': datetime.fromtimestamp(self.apk_path.stat().st_ctime),
             'modification_time': datetime.fromtimestamp(self.apk_path.stat().st_mtime),
             'hashes': self.calculate_file_hash()
