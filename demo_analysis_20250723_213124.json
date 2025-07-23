@@ -1,0 +1,36 @@
+{
+  "analysis_info": {
+    "tool_name": "APK Security Analyzer Demo",
+    "version": "1.0.0",
+    "analysis_date": "2025-07-23T21:31:24.979372",
+    "analyst": "Automated Analysis"
+  },
+  "file_info": {
+    "file_name": "test_banking_app.apk",
+    "file_size": 346,
+    "file_type": "APK File (Android Package)",
+    "creation_time": "2025-07-23T21:31:20.210333",
+    "modification_time": "2025-07-23T21:31:20.210333",
+    "hashes": {
+      "md5": "b5e83b98b7bfc0685f05689470e956c3",
+      "sha1": "af7fb1bbdbb54cbf0d1323636122c67818b444df",
+      "sha256": "dc40477da2396f52c8502da78e13adda8863fee68f3a346c9d6e00fa041c3788"
+    }
+  },
+  "security_score": 90,
+  "vulnerabilities_count": 1,
+  "vulnerabilities": [
+    {
+      "type": "Suspicious File Size",
+      "severity": "متوسط",
+      "description": "حجم الملف صغير جداً، قد يكون ملف تجريبي أو تالف",
+      "recommendation": "تحقق من صحة الملف"
+    }
+  ],
+  "recommendations": [
+    "قم بفحص الملف باستخدام أدوات إضافية",
+    "تأكد من مصدر الملف الموثوق",
+    "اختبر التطبيق في بيئة معزولة",
+    "راجع الصلاحيات المطلوبة"
+  ]
+}

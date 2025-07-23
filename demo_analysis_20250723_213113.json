@@ -1,0 +1,36 @@
+{
+  "analysis_info": {
+    "tool_name": "APK Security Analyzer Demo",
+    "version": "1.0.0",
+    "analysis_date": "2025-07-23T21:31:13.237965",
+    "analyst": "Automated Analysis"
+  },
+  "file_info": {
+    "file_name": "demo_app.apk",
+    "file_size": 3,
+    "file_type": "APK File (Android Package)",
+    "creation_time": "2025-07-23T20:59:09.208454",
+    "modification_time": "2025-07-23T20:59:09.208454",
+    "hashes": {
+      "md5": "b851feb216332d7bef8adfb991aeefdb",
+      "sha1": "47ccd16014e45695664b6d28f56c299923d1411c",
+      "sha256": "09d1bdfd0c497f9ffdd545221f1ebb4abbc3713ceaafc76da8f3f3226728b0b3"
+    }
+  },
+  "security_score": 90,
+  "vulnerabilities_count": 1,
+  "vulnerabilities": [
+    {
+      "type": "Suspicious File Size",
+      "severity": "متوسط",
+      "description": "حجم الملف صغير جداً، قد يكون ملف تجريبي أو تالف",
+      "recommendation": "تحقق من صحة الملف"
+    }
+  ],
+  "recommendations": [
+    "قم بفحص الملف باستخدام أدوات إضافية",
+    "تأكد من مصدر الملف الموثوق",
+    "اختبر التطبيق في بيئة معزولة",
+    "راجع الصلاحيات المطلوبة"
+  ]
+}

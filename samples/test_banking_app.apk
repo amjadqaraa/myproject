@@ -1,0 +1,11 @@
+PK
+This is a demo APK file for testing purposes.
+It contains sample data to simulate a real APK structure.
+Package: com.example.bankingapp
+Version: 1.2.3
+Permissions: INTERNET, READ_SMS, ACCESS_FINE_LOCATION, CAMERA
+Features: Banking, Payment, Authentication
+Framework: Java (Native Android)
+SDK: 21-33
+Signed: Yes
+Size: Large enough for testing
